@@ -17,6 +17,4 @@ ChangeLog:
    
 7. Some of the varible names have changed due to change #5
 
-8. All the variables are strings and then are being converted to integers using 'str(eval(variable_to_be_converted))'
-
-9. 
+8. All the variables are strings and then are being converted to integers using 'str(eval(variable_to_be_converted))
