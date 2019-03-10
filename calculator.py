@@ -48,15 +48,15 @@ def square():
 
 def memoryplus():
     global problemnew, memoryadd        # Declaring global variables 'problemnew' and 'memoryadd' #
-    memoryadd = problemnew.get()        
+    memoryadd = problemnew.get()        # Setting 'memoryadd' to the number in the box #
 
 def memoryget():
     global problemnew, memoryadd        # Declaring global variables 'problemnew' and 'memoryadd' #
-    problemnew.set(memoryadd)
+    problemnew.set(memoryadd)           # Setting the entry box to the value of the variable 'memoryadd' #
 
 def memoryclear():
     global memoryadd                    # Declaring global variable 'memoryadd' #
-    memoryadd = ''
+    memoryadd = ''                      # Setting 'memoryadd' to a blank string to clear the current value #
     
     
     
