@@ -36,6 +36,8 @@ def clear2():
     problem = ''                        # Clears the current equation #
     problemnew.set("")                  # Clears the entry box #
 
+# Square Functions #
+
 def squareroot():
     global problemnew                   # Declaring the global variable 'problemnew' #
     sqrt = float(box.get())**.5         # Takes the square root of the number in the entry box #
@@ -45,6 +47,8 @@ def square():
     global problemnew                   # Declaring the global variable 'problemnew' #
     square = float(box.get())**2        # Squares the number currently in the entery box #
     problemnew.set(square)              # Sets the entry box to the square of the number entered #
+
+# Memory Functions #
 
 def memoryplus():
     global problemnew, memoryadd        # Declaring global variables 'problemnew' and 'memoryadd' #
