@@ -1,0 +1,22 @@
+ChangeLog:
+
+1. I cant see to be able to make the entry box work when you type something in so I've abandoned that
+
+2. There is no delete key, only a clear one as I wasn't able to make it just delete one charcter not the whole equation
+
+3. The 'MR' key from the design has changed to 'M' and the 'M-' key is now the 'MC' (Memory Clear) key.
+
+4. The check to see if the calculation is invalid didn't work so I couldnt use it so if a calculation is invalid it just
+   wont work.
+   
+5. The pseudocode I wrote in my design document has changed quite a bit, now instead of checking for function keys it takes
+   whatever is enetred into the box and converts, that string into an integer and then just does the problem that way.
+   
+6. To refer to my entry box I've had to define a variable 'problem = StringVar()' at the start and in the setup of the entry
+   define it as a textvariable so text can be sent to it in the form of the button presses.
+   
+7. Some of the varible names have changed due to change #5
+
+8. All the variables are strings and then are being converted to integers using 'str(eval(variable_to_be_converted))'
+
+9. 
