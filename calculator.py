@@ -45,6 +45,19 @@ def square():
     global problemnew                   # Defines the global variable 'problemnew' #
     square = float(box.get())**2        # Squares the number currently in the entery box #
     problemnew.set(square)              # Sets the entry box to the square of the number entered #
+
+def memoryplus():
+    global problemnew, memoryadd
+    memoryadd = problemnew.get()
+
+def memoryget():
+    global problemnew, memoryadd
+    problemnew.set(memoryadd)
+
+def memoryclear():
+    global memoryadd
+    memoryadd = ''
+    
     
     
 # Creating the elements, buttons, entry box, etc. #
@@ -69,6 +82,9 @@ decimal = Button(window, text='.', command=lambda: buttonpress('.') );
 pi = Button(window, text='π', command= lambda: buttonpress('3.14159265359'));
 sqrtbutton = Button(window, text='√', command=squareroot);
 squarebutton = Button(window, text="x²", command=square);
+memoryplusbutton = Button(window, text='M+', command=memoryplus);
+memorygetbutton = Button(window, text='M', command=memoryget);
+memoryclearbutton = Button(window, text='MC', command=memoryclear);
 enter = Button(window, text='Enter', command=enter );
 
 # Drawing the Elements using a grid #
@@ -93,6 +109,9 @@ decimal.grid(row=4, column=1);
 pi.grid(row=1, column=4);
 sqrtbutton.grid(row=2, column=4);
 squarebutton.grid(row=3, column=4);
+memoryplusbutton.grid(row=1, column=5);
+memorygetbutton.grid(row=2, column=5);
+memoryclearbutton.grid(row=3, column=5);
 enter.grid(row=5, column=3);
 
 clear2()
