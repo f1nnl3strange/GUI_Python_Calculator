@@ -21,41 +21,41 @@ problem = ''
 # Defining Functions for the buttons #
  
 def buttonpress(press):                 # Takes the value of the button pressed and assignes it to variable 'press' #
-    global problem, problemnew          # Defines the global variables, 'problem' and 'problemnew' #
+    global problem, problemnew          # Declaring the global variables, 'problem' and 'problemnew' #
     problem = problem + str(press)      # Makes 'problem' = to problem + whatever button was pressed #
     problemnew.set(problem)             # Sets the entry 'box' to the value of 'problem' #
  
 def enter():
-    global problem, problemnew, total   # Defines the global variables, 'problem' and 'problemnew' # 
+    global problem, problemnew, total   # Declaring the global variables, 'problem' and 'problemnew' # 
     total = str(eval(problem))          # Sets 'total' to a string using eval which allows python to run functions inside itself #
     problemnew.set(total)               # Sets the entry box to total #
     problem = ""                        # Clears the current value of 'problem' #
 
 def clear2():
-    global problem, problemnew          # Defines the global variables, 'problem' and 'problemnew' #
+    global problem, problemnew          # Declaring the global variables, 'problem' and 'problemnew' #
     problem = ''                        # Clears the current equation #
     problemnew.set("")                  # Clears the entry box #
 
 def squareroot():
-    global problemnew                   # Defines the global variable 'problemnew' #
+    global problemnew                   # Declaring the global variable 'problemnew' #
     sqrt = float(box.get())**.5         # Takes the square root of the number in the entry box #
     problemnew.set(sqrt)                # Sets the entry box to the square root of the number enterd #
 
 def square():
-    global problemnew                   # Defines the global variable 'problemnew' #
+    global problemnew                   # Declaring the global variable 'problemnew' #
     square = float(box.get())**2        # Squares the number currently in the entery box #
     problemnew.set(square)              # Sets the entry box to the square of the number entered #
 
 def memoryplus():
-    global problemnew, memoryadd
-    memoryadd = problemnew.get()
+    global problemnew, memoryadd        # Declaring global variables 'problemnew' and 'memoryadd' #
+    memoryadd = problemnew.get()        
 
 def memoryget():
-    global problemnew, memoryadd
+    global problemnew, memoryadd        # Declaring global variables 'problemnew' and 'memoryadd' #
     problemnew.set(memoryadd)
 
 def memoryclear():
-    global memoryadd
+    global memoryadd                    # Declaring global variable 'memoryadd' #
     memoryadd = ''
     
     
