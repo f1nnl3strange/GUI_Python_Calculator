@@ -11,6 +11,8 @@ from math import *
 window = Tk();
 window.title('Calculator');
 window.resizable(0, 0);                 # Makes the window not resizable #
+icon = PhotoImage(file='icon.gif')                  # Adds the icon to a variable #
+window.tk.call('wm', 'iconphoto', window._w, icon)  # Makes the icon the icon you see in the top left of the window #
 
  
 # Variables # 
@@ -119,19 +121,3 @@ memoryclearbutton.grid(row=3, column=5);
 enter.grid(row=5, column=3);
 
 clear2()
-    
-
-
-
-
-
-        
-        
-    
-
-    
-
-    
-    
-    
-
