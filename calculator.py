@@ -67,29 +67,29 @@ def memoryclear():
 # Creating the elements, buttons, entry box, etc. #
 
 box = Entry(window, textvariable=problemnew); 
-clear = Button(window, bg='blue', text='CE', command=clear2 );
-zero = Button(window, bg='purple', text='0', command=lambda: buttonpress('0') );
-one = Button(window, bg='purple', text='1', command=lambda: buttonpress('1') );
-two = Button(window, bg='purple', text='2', command=lambda: buttonpress('2') );
-three = Button(window, bg='purple', text='3', command=lambda: buttonpress('3') );
-four = Button(window, bg='purple', text='4', command=lambda: buttonpress('4') );
-five = Button(window, bg='purple', text='5', command=lambda: buttonpress('5') );
-six = Button(window, bg='purple', text='6', command=lambda: buttonpress('6') );
-seven = Button(window, bg='purple', text='7', command=lambda: buttonpress('7') );
-eight = Button(window, bg='purple', text='8', command=lambda: buttonpress('8') );
-nine = Button(window, bg='purple', text='9', command=lambda: buttonpress('9') );
-divide = Button(window, bg='pink', text='/', command=lambda: buttonpress('/') );
-multiply = Button(window, bg='pink', text='*', command=lambda: buttonpress('*') );
-subtract = Button(window, bg='pink', text='-', command=lambda: buttonpress('-') );
-add = Button(window, bg='pink', text='+', command=lambda: buttonpress('+') );
-decimal = Button(window, bg='purple', text='.', command=lambda: buttonpress('.') );
-pi = Button(window, bg='green', text='π', command= lambda: buttonpress('3.14159265359'));
-sqrtbutton = Button(window, bg='green', text='√', command=squareroot);
-squarebutton = Button(window, bg='green', text="x²", command=square);
-memoryplusbutton = Button(window, bg='red', text='M+', command=memoryplus);
-memorygetbutton = Button(window, bg='red', text='M', command=memoryget);
-memoryclearbutton = Button(window, bg='red', text='MC', command=memoryclear);
-enter = Button(window, bg='orange', text='Enter', command=enter );
+clear = Button(window, bg='DeepPink2', text='CE', command=clear2 );
+zero = Button(window, bg='purple1', text='0', command=lambda: buttonpress('0') );
+one = Button(window, bg='purple1', text='1', command=lambda: buttonpress('1') );
+two = Button(window, bg='purple1', text='2', command=lambda: buttonpress('2') );
+three = Button(window, bg='purple1', text='3', command=lambda: buttonpress('3') );
+four = Button(window, bg='purple1', text='4', command=lambda: buttonpress('4') );
+five = Button(window, bg='purple1', text='5', command=lambda: buttonpress('5') );
+six = Button(window, bg='purple1', text='6', command=lambda: buttonpress('6') );
+seven = Button(window, bg='purple1', text='7', command=lambda: buttonpress('7') );
+eight = Button(window, bg='purple1', text='8', command=lambda: buttonpress('8') );
+nine = Button(window, bg='purple1', text='9', command=lambda: buttonpress('9') );
+divide = Button(window, bg='DeepSkyBlue2', text='/', command=lambda: buttonpress('/') );
+multiply = Button(window, bg='DeepSkyBlue2', text='*', command=lambda: buttonpress('*') );
+subtract = Button(window, bg='DeepSkyBlue2', text='-', command=lambda: buttonpress('-') );
+add = Button(window, bg='DeepSkyBlue2', text='+', command=lambda: buttonpress('+') );
+decimal = Button(window, bg='purple3', text='.', command=lambda: buttonpress('.') );
+pi = Button(window, bg='SpringGreen2', text='π', command= lambda: buttonpress('3.14159265359'));
+sqrtbutton = Button(window, bg='SpringGreen2', text='√', command=squareroot);
+squarebutton = Button(window, bg='SpringGreen2', text="x²", command=square);
+memoryplusbutton = Button(window, bg='cyan2', text='M+', command=memoryplus);
+memorygetbutton = Button(window, bg='cyan2', text='M', command=memoryget);
+memoryclearbutton = Button(window, bg='cyan2', text='MC', command=memoryclear);
+enter = Button(window, bg='purple4', text='Enter', command=enter );
 
 # Drawing the Elements using a grid #
 
